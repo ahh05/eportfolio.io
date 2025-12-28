@@ -1,0 +1,70 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #c7ddcc;
+	padding-bottom: 60px;
+}
+
+h1 {
+	color:brown;
+	text-align: center; /* adds the colour options for main header*/
+}
+
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+
+h1:hover {
+	color:#16123f
+}
+
+#top-nav {
+	background-color: #16123f;
+	padding: 10px;
+	text-align: center;
+	border-radius: 50px 50px 50px 50px; /* rounded corners */
+}
+
+#top-nav a {
+	color: white;
+	margin: 0 15px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+#top-nav a:hover {
+	color:#c7ddcc;
+	text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 50px 50px 0 0; /* rounded top corners */
+}
+
+@keyframes slide-in { /* animation */
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
