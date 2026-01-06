@@ -1,36 +1,44 @@
 body {
 	font-family: helvetica, arial, sans-serif;
-	background-color: #c7ddcc;
+	background-color: #e0e0e0;
 	padding-bottom: 60px;
+	margin: 0;   /* removes the left & right gap on browser */
+}
+
+header {
+	background-color: rgba(100, 100, 100, 0.863);
+	padding: 20px;
+	display: flex;
+  	justify-content: flex-start; /* 👈 move content left */
+}
+
+#homefreddy {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0; 
+  text-align: center;
+  border-radius: 25px;
+  width: auto;
+  margin: 20px 0; /* 0 to shift to the left, auto for center */
+  padding: 5px;
+  position: relative;
+  gap: 10px;
 }
 
 h1 {
-	color:brown;
+	color:#16123f;
 	text-align: center; /* adds the colour options for main header*/
 }
 
-.plant-holder {
-	position: relative;
-	height: 13%;
-	left: -10px;
-}
-
-.plant {
-	position: absolute;
-	max-width: 150%;
-	max-height: 150%;
-	z-index: 2;
-}
-
 h1:hover {
-	color:#16123f
+	color:brown
 }
 
 #top-nav {
-	background-color: #16123f;
+	background-color: #141414;
 	padding: 12px 20px;
 	text-align: center;
-	border-radius: 50px;
+	/* border-radius: 50px; */
 	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 	position: sticky;
 	top: 10px; /* subtle sticky effect */
@@ -78,4 +86,5 @@ footer {
 		opacity: 1;
 	}
 }
+
 
