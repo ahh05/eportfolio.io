@@ -13,7 +13,7 @@
   <script src="" defer></script> <!-- improves page load speed -->
 </head>
 
-<!-- HERO / INTRO SECTION (ADDED) -->
+<!-- HERO / INTRO SECTION -->
 <header>
   <h1 id="homefreddy"><i class="fas fa-home"> </i>Home</h1>
 </header>
@@ -27,15 +27,15 @@
     <a href="Reflection.html"><i class="fas fa-lightbulb"></i> Reflection</a>
   </div>
 
-
-
-  <!-- HOME CONTENT SECTION (ADDED) -->
-  <section id="home-content">
+  <!-- HOME CONTENT SECTION -->
+  <section class="rounded-section fancy-section">
+  <h1>What this site is about</h1>
+  <p>
+    <section id="home-content">
     <p>
       Welcome to my E-Portfolio - this site documents my website-building projects,
       lessons learnt, and behind-the-scenes development process.
     </p>
-    <h2>What this site is about</h2>
     <p>
       This website showcases my coursework, experiments, and reflections
       as I explore web development and design. Each section in the
@@ -49,15 +49,45 @@
       <li><strong>Reflection:</strong> Lessons learnt and takeaways</li>
     </ul>
   </section>
-  </main>
+  </p>
+</section>
 
-  <!-- FOOTER (ADDED) -->
+
+  <!-- beachball -->
+  <div id="beachball">🏖️</div>
+
+  <!-- FOOTER -->
   <footer id="site-footer">
+    <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/"
+      class="social-icon linkedin"
+      target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+   <a href="https://github.com/ahh05/eportfolio.io"
+    class="social-icon github repo"
+    target="_blank">
+    <i class="fab fa-github"> Repository</i>
+    </a>
+
+    <a href="https://github.com/ahh05"
+    class="social-icon github profile"
+    target="_blank">
+    <i class="fab fa-github"> Profile</i>
+    </a>
     <p>© 2025 | E-Portfolio </p>
-    <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/">LinkedIn</a>
-    <a href="https://github.com/ahh05/test123.github.io">GitHub Repository</a>
-    <a href="https://github.com/ahh05">GitHub</a>
   </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+
+  <!-- Initialize dragging -->
+  <script>
+  window.onload = function() {
+    dragElement(document.getElementById("beachball"));
+  };
+  </script>
+
 </body>
+
 
 </html>
