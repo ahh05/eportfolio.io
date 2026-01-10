@@ -76,6 +76,63 @@ footer {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.fancy-section {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* subtle gradient */
+  border-radius: 30px;               /* rounded corners */
+  padding: 40px 25px;                /* spacing inside */
+  margin: 40px auto;                 /* space around and centered */
+  max-width: 900px;                  /* constrain width */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* soft shadow for depth */
+  border-left: 6px solid brown;    /* optional colored accent on left edge */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fancy-section:hover {
+  transform: translateY(-5px);       /* subtle lift on hover */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* stronger shadow on hover */
+}
+
+.fancy-section h2 {
+  color: #16123f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fancy-section p {
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+
+
+#beachball {
+  position: absolute; /* must be absolute for dragging */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffeb3b, #ff9800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: grab;
+  user-select: none;
+  z-index: 1000;
+  top: calc(100vh - 140px);  /* start near bottom right */
+  left: calc(100vw - 80px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.1s ease;
+}
+
+#beachball:active {
+  cursor: grabbing;
+  transform: scale(0.95);
+}
+
+
+
 @keyframes slide-in { /* animation */
 	0% {
 		transform: translateX(-100%);
