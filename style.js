@@ -37,3 +37,43 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
+// calculator
+const display = document.getElementById("display");
+
+function appendToDisplay(value) {
+  // Prevent multiple operators at once
+  const lastChar = display.value.slice(-1);
+  if (['+', '-', '*', '/'].includes(value) && ['+', '-', '*', '/'].includes(lastChar)) {
+    return;
+  }
+
+  display.value += value;
+}
+
+function clearDisplay() {
+  display.value = '';
+}
+
+function calculateResult() {
+  try {
+    display.value = eval(display.value); // simple evaluation
+  } catch {
+    display.value = "Error";
+  }
+}
+
+let total = 0;
+
+function addNumber(num) {
+  total += Number(num);
+  display.value = total;
+}
+
+function clearDisplay() {
+  total = 0;
+  display.value = '';
+}
+
+
