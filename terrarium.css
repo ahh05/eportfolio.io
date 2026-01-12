@@ -1,6 +1,32 @@
 body {
 	font-family: helvetica, arial, sans-serif;
 }
+#top-nav {
+	padding: 12px 20px;
+	text-align: center;
+	/* border-radius: 50px; */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	position: sticky;
+	top: 10px; /* subtle sticky effect */
+	z-index: 100;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#top-nav a {
+	color: black;
+	margin: 0 20px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#top-nav a:hover {
+	color: #c7ddcc;
+	text-decoration: underline;
+	font-weight: bold;
+	transform: scale(1.1);
+}
 
 h1 {
 	color:brown;
