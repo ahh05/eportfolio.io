@@ -1,21 +1,108 @@
 <!DOCTYPE html> <!-- for HTML config -->
 
 <html lang="en"> <!-- english lang -->
-  <head>
-    <title>Testing Website V1</title> <!-- for the tab name -->
-    <meta charset="utf-8">
-    <meta name="viewport", content="width=device=width,initial-scale=1"> <!-- for scaling based on diff devices -->
-    <link rel="stylesheet", href="./style.css">
-    <script src=""defer></script> <!-- improves page load speed -->
-  </head>
-  
-  <body> <!--for main content -->
-    <div id="top-nav">
-      <a href="index.html">Home</a>
-      <a href="About_Me.html">About Me</a>
-      <a href="Project.html">Project</a>
-      <a href="Behind_the_Scenes.html">Behind the Scenes</a>
-      <a href="Reflection.html">Reflection</a>
+
+<head>
+  <title>Project</title> <!-- for the tab name -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- for scaling based on diff devices -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- font awesome for icons -->
+  <script src="" defer></script> <!-- improves page load speed -->
+</head>
+
+<!-- HERO / INTRO SECTION -->
+<header>
+  <h1 id="homefreddy"><i class="fas fa-briefcase"></i> Project</h1>
+</header>
+
+<body> <!--for main content -->
+  <div id="top-nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About_Me.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="Project.html"><i class="fas fa-briefcase"></i> Project</a>
+    <a href="Terrarium.html"><i class="fas fa-fish"></i> Terrarium</a>
+    <a href="Calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+    <a href="Behind_the_Scenes.html"><i class="fas fa-cogs"></i> Behind the Scenes</a>
+    <a href="Reflection.html"><i class="fas fa-lightbulb"></i> Reflection</a>
+  </div>
+
+
+
+  <!-- HOME CONTENT SECTION -->
+  <div class="project-container">
+    <div class="column">
+      <h3>Mini Project #1: Terrarium</h3>
+      <p>For this project, I followed a <a
+          href="https://www.linkedin.com/learning-login/share?account=76881922&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fhtml-css-and-javascript-building-the-web%3Ftrk%3Dshare_ent_url%26shareId%3DRLhUbP4ASDWsH%252Foqx%252FVuUw%253D%253D"
+          target="_blank">LinkedIn Learning course</a>
+        to guide me through creating a digital project page for a terrarium.
+        I started by learning HTML, which helped me structure the webpage and add headings, paragraphs, and images.
+        Next, I learned CSS to style the page such as adding colours, rounded corners, spacing, and layout design to
+        make it visually appealing.
+        Finally, I explored basic JavaScript to add simple interactivity, such as hover effects and animations for the
+        project images. </p>
     </div>
-    
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=FeuhcOvkK5mEL0xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <img class="project-img" id="project1" alt="A picture of myself" src="./images/Project 1.jpg">
+
+    <div class="column">
+      <h3>Mini Project #2: Calculator</h3>
+      <p>For this project, I followed a <a
+          href="https://www.youtube.com/watch?v=cHkN82X3KNU&t=14s"
+          target="_blank">YouTube video tutorial</a>
+        to create a functional web calculator. While I applied HTML to build the structure and CSS for styling, the main
+        focus of this project was learning JavaScript functionality.
+        I used JavaScript to make the calculator interactive. Particularly handling number input, performing arithmetic operations,
+        updating the display dynamically, and managing user interactions like clearing or deleting input.</p>
+    </div>
+    <img class="project-img" id="project1" alt="A picture of myself" src="./images/Project 2.jpg">
+
+    <div class="column">
+      <h3>Final Project: Portfolio Website</h3>
+      <ul>
+        <li>Web development basics</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Project management</li>
+      </ul>
+    </div>
+    <img class="project-img" id="project1" alt="A picture of myself" src="./images/Project 3.jpg">
+  </div>
+  </section>
+
+
+
+
+  <!-- beachball -->
+  <div id="beachball">🏖️</div>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" class="social-icon linkedin" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/ahh05/eportfolio.io" class="social-icon github repo" target="_blank">
+      <i class="fab fa-github"> Repository</i>
+    </a>
+
+    <a href="https://github.com/ahh05" class="social-icon github profile" target="_blank">
+      <i class="fab fa-github"> Profile</i>
+    </a>
+    <p>© 2025 | E-Portfolio </p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+
+  <!-- Initialize dragging -->
+  <script>
+    window.onload = function () {
+      dragElement(document.getElementById("beachball"));
+    };
+  </script>
+
+</body>
+
+
+</html>
