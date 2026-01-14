@@ -108,6 +108,31 @@ footer {
   text-align: center;
 }
 
+/* Styles for About Me image row */
+.image-row {
+  text-align: center;  /* centers any content inside */
+  margin-bottom: 30px; /* spacing between image and columns */
+}
+
+.image-row .me1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;  /* inline so it respects text-align: center */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  float: none;            /* make sure float is gone */
+}
+
+h2 {
+  text-align: center;      /* centers the text horizontally */
+  color: #16123f;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+
 
 
 
@@ -160,6 +185,37 @@ footer {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+
+/* Images for Projects */
+.project-img {
+  width: 600%;            /* scale to container width */
+  max-width: 600px;       /* optional: limit max width */
+  height: auto;           /* maintain aspect ratio */
+  border-radius: 20px;    /* rounded corners */
+  object-fit: cover;      /* crop to fit nicely if needed */
+  display: block;         /* make it a block element so margin works */
+  margin: 20px auto;      /* center horizontally with spacing above/below */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* optional shadow for depth */
+  transition: transform 0.3s ease; /* optional hover effect */
+}
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;   /* stack rows vertically */
+  gap: 20px;                /* space between rows */
+}
+
+.project-container .column {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
 
 /* Responsive for smaller screens */
 @media screen and (max-width: 600px) {
