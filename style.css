@@ -281,6 +281,24 @@ h2 {
   transform: scale(1.05);
 }
 
+.gallery video {
+  width: 100%;            /* fill the container width */
+  height: 100%;           /* fill the same height as images */
+  max-width: 420px;       /* same as images */
+  aspect-ratio: 4 / 3;    /* match image ratio */
+  object-fit: cover;      /* crop/fit like images */
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+  display: block;         /* remove any inline video spacing */
+}
+
+
+
+.gallery video:hover {
+  transform: scale(1.05);
+}
+
 
 /* For PDF section (Reflection page) */
 .pdf-section {
