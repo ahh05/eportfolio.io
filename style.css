@@ -123,25 +123,6 @@ footer {
   text-align: center;
 }
 
-/* Styles for About Me image row */
-.image-row {
-  text-align: center;
-  /* centers any content inside */
-  margin-bottom: 30px;
-  /* spacing between image and columns */
-}
-
-.image-row .me1 {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: inline-block;
-  /* inline so it respects text-align: center */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  float: none;
-  /* make sure float is gone */
-}
 
 h2 {
   text-align: center;
@@ -151,8 +132,6 @@ h2 {
   margin-bottom: 20px;
   font-size: 32px;
 }
-
-
 
 
 
@@ -185,20 +164,29 @@ h2 {
 
 /* Images for About Me*/
 .me1 {
-  width: 150px;
-  /* size of image */
-  height: 150px;
-  /* keep square for perfect circle */
+  width: 300px !important;
+  height: 300px !important;
   border-radius: 50%;
-  /* makes it circular */
+}
+
+/* Styles for About Me image row */
+.image-row {
+  text-align: center;
+  /* centers any content inside */
+  margin-bottom: 30px;
+  /* spacing between image and columns */
+}
+
+.image-row .me1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
-  /* ensures image covers circle nicely */
-  float: left;
-  /* move image to the left */
-  margin: 0 20px 20px 0;
-  /* spacing around image */
+  display: inline-block;
+  /* inline so it respects text-align: center */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* optional shadow */
+  float: none;
+  /* make sure float is gone */
 }
 
 .flex-container {
